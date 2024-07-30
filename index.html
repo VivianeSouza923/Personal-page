@@ -4,45 +4,34 @@ Crie uma página pessoal com uma breve biografia, uma foto sua e links para suas
 a estrutura básica de uma página HTML.
 -->
 
-<!-- essa tag serve para informar ao navegador que estamos utilizando HTML5. Ela evita que os navegadores entrem no modo Quirks 
-(permanecendo no modo padrão), onde tentam ser compatíveis com as versões antigas do HTML. Com ela, eu garanto consistência e 
-compatilibade em diferentes navegadores-->
 <!DOCTYPE html>
-
-<!-- Essa tag engloba todo o conteúdo de um documento html, ou seja, início e fim (ELA É O ELEMENTO RAIZ). Ela serve para indicar 
-ao navegador que todo o conteúdo deve ser interpretado como HTML. Dentro dessa tag, temos outras duas tags que é o head e o body.
-Nela, eu posso indicar o idioma da página através do atributo 'lang'. Ela é importante para se manter uma boa estrutura semântica
-do documento, o que é muito importante para a acessibilidade e SEO da página. Ela é necessária para que o documento seja considera-
-do válido de acordo com as especificações do html.-->
 <html lang="en">
-    <!-- Agrupa elementos que contém metadados sobre o documento, ou seja, informações que não são exibidas na página em si, mas
-    que são essencias para a configuração e comportamento da página. Essa tag tem as seguintes funções: 1. Metadados: inclui in-
-    formações sobre a página que são usadas pelos navegadores e motores de busca. Exemplos comuns são definição de conjunto de
-    caracteres, palavras-chave, autores, descrições da página. 2. TÍTULO DA PÁGINA: O título exibido na aba do navegador, que é 
-    feito com a tag title. 3. Links para recursos externos: links para css externo, fontes externas, ícones de favoritos (favicon),
-    e scripts. 4: Scripts e Estilos internos: scripts de JS e CSS interno.-->
     
     <head>
-        <!-- Define o título da página, que aparece na aba do navegador.-->
         <title>Viviane Souza's homepage</title>
-        <!--Para especificar o conjunto de caracteres. UTF-8 suporta uma ampla gama de caracteres de diversos idiomas.-->
         <meta charset="UTF-8">
         <meta name="description",
          content="A short biography with photos, links to social networks so that you can get to know me better.">
-        <meta name="Viviane Souza">
-        <!-- linkar o css externo-->
+         <meta name="author" content="Viviane Souza">
         <link rel="stylesheet" href="styles.css">
-        <!-- ícone da aba do navegador-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
-    <!-- é onde está tudo que é visual da minha página. JUnto com a tag head, esta tag ajuda a estruturar o documento html. Nela
-    também colocamos scripts que afetam o conteúdo da página.-->
-    <body>
+   
 
         <nav>
-            <h1><a href="./index.html">Viviane Souza</a></h1>
+            <h1>
+                <a href="./index.html">VIVIANE SOUZA</a>
+            </h1>
+
+            <ul>
+                <li><a href="#paragrafo">About</a></li>
+                <li>Hobby Photos</li>
+                <li>Social Networks</li>
+            </ul>
 
         </nav>
+
+        <p id="paragrafo">Hi, I'm Vivi. I'm 28 years old, a data scientist and a software engineer. I live in Fortaleza, the capital of Ceará (in Brazil). I'm a telecommunications engineering student at the Federal Institute of Education, Science and Technology of Ceará. I'm also a Christian, engaged to Alesi s2 and I love sports competitions, which push the limits of the body (actually, I love watching, because I don't practice hihihi). And that's it, I'm going to talk about some of my hobbies below, so just scroll down hahaha.</p>
 
     </body>
 
